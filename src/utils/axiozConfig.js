@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:3000"
-})
+  baseURL: "https://movie-app-server-1234.onrender.com",
+});
 
-export default  axiosInstance
+export default axiosInstance;
