@@ -1,9 +1,9 @@
 import React from "react";
-import "./Home.css";
 import { RiFilmFill } from "react-icons/ri";
 import { PiTelevisionFill } from "react-icons/pi";
 import { BiBookmark, BiSolidBookmark } from "react-icons/bi";
 import useAuth from "../../hooks/useAuth";
+import "./home.css";
 
 const MovieCarousel = ({ data, updateUI }) => {
   const { user, token } = useAuth();
@@ -17,7 +17,7 @@ const MovieCarousel = ({ data, updateUI }) => {
           const bookmarkIcon = bookmarkedBy.includes(user?.id) ? (
             <BiSolidBookmark
               onClick={() => {
-                updateUI('remove', _id, token, user?.id);
+                updateUI("remove", _id, token, user?.id);
               }}
               className="icon position-absolute top-0 end-0 fs-3 me-3 mt-3"
             />
