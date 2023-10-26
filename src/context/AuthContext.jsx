@@ -91,7 +91,7 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     setToken(null);
     localStorage.removeItem("token");
-    toast.success("See you soon!")
+    toast.success("See you soon!");
     navigate("/");
   };
 

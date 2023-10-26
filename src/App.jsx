@@ -10,7 +10,7 @@ import Bookmark from "./pages/Bookmark/Bookmark";
 import Error from "./pages/Error/Error";
 import RootLayout from "./layouts/RootLayout";
 import AuthLayout from "./layouts/AuthLayout";
-import { AuthProvider } from "./context/authContext";
+import { AuthProvider } from "./context/AuthContext";
 import { Toaster } from "react-hot-toast";
 import PrivateRoute from "./utils/PrivateRoute";
 
