@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { useContext } from "react";
-import AuthContext from "../context/authContext";
 import toast from "react-hot-toast";
 import { Navigate, Outlet } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const PrivateRoute = () => {
-  const { token } = useContext(AuthContext);
+  const { token } = useAuth()
 
   useEffect(() => {
     if (!token) {
