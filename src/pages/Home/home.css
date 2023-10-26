@@ -19,11 +19,10 @@
 }
 @media (width > 1200px) {
   .carousel {
-  max-width: calc(100vw - 210px);
+    max-width: calc(100vw - 210px);
   }
 }
 
-.icon:hover{
+.icon:hover {
   cursor: pointer;
 }
-
